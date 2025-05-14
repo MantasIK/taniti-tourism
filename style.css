@@ -1,93 +1,114 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: sans-serif;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
 }
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 main {
-  flex: 1;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 header {
-  background: #f5f5f5;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background: #f5f5f5;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
 }
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header nav {
+    margin-left: auto;
 }
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-nav li {
-  margin-right: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
 }
 nav a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 .hero {
-  background: #ddd;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background: url("assets/resort.jpg") center/cover no-repeat;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
-.hero h1 {
-  margin: 0;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
+    margin: 0.5em 0;
+}
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 .activities-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .activity-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-}
-.image-placeholder {
-  background: #eee;
-  height: 100px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .cost {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
 }
-.booking-form, .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+.booking-form,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
 }
 label {
-  font-weight: bold;
+    font-weight: bold;
 }
-input, select, textarea, button {
-  padding: 5px;
-  font-size: 1em;
+input,
+select,
+textarea,
+button {
+    padding: 8px;
+    font-size: 1em;
 }
 footer {
-  background: #f5f5f5;
-  text-align: center;
-  padding: 10px;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+}
+footer a {
+    color: #333;
 }

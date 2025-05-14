@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Taniti Tourism - Booking</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="logo">Taniti Tourism</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>Booking</h1>
-    <p>Select your activity and fill in the details below to book.</p>
-    <form class="booking-form">
-      <label for="activity">Select Activity:</label>
-      <select id="activity" name="activity">
-        <option value="snorkeling">Snorkeling Tour - $50/person</option>
-        <option value="beach">Beach Relaxation - Free</option>
-        <option value="excursion">3-Day Island Excursion - $150/person</option>
-      </select>
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required>
-      <label for="people">Number of People:</label>
-      <input type="number" id="people" name="people" min="1" max="10" required>
-      <button type="submit">Submit</button>
-    </form>
-  </main>
-  <footer>
-    <p>&copy; 2025 Taniti Tourism</p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Taniti Tourism - Booking</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">Taniti Tourism</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Booking</h1>
+            <p>Select your activity and fill in the details below to book.</p>
+            <form class="booking-form">
+                <label for="activity">Select Activity:</label>
+                <select id="activity" name="activity">
+                    <option value="snorkeling">Snorkeling Tour - $50/person</option>
+                    <option value="beach">Beach Relaxation - Free</option>
+                    <option value="excursion">3-Day Island Excursion - $150/person</option>
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" max="10" required />
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025 Taniti Tourism</p>
+            <a href="contact.html">Contact</a>
+        </footer>
+    </body>
 </html>
